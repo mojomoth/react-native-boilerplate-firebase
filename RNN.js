@@ -6,7 +6,10 @@ Navigation.registerComponent("App", () => App);
 Navigation.startSingleScreenApp({
   screen: {
     screen: "App",
-    navigatorStyle: {},
+    navigatorStyle: {
+      navBarHidden: true,
+      modalPresentationStyle: "overFullScreen"
+    },
     navigatorButtons: {}
   },
   appStyle: {
