@@ -1,5 +1,5 @@
 {
-  "name": "RNFirebaseStarter",
+  "name": "iget",
   "version": "5.4.0",
   "private": true,
   "scripts": {
@@ -12,19 +12,23 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.8.3",
-    "react-native": "0.59.9",
-    "react-native-firebase": "^5.5.4"
+    "@react-native-community/geolocation": "2.0.2",
+    "react": "16.8.6",
+    "react-native": "0.60.5",
+    "react-native-firebase": "5.5.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/runtime": "^7.4.5",
-    "babel-jest": "^24.8.0",
-    "fs-extra": "^7.0.1",
-    "jest": "^24.8.0",
-    "metro-react-native-babel-preset": "^0.54.1",
+    "@babel/core": "7.4.3",
+    "@babel/runtime": "7.4.5",
+    "babel-jest": "24.8.0",
+    "fs-extra": "7.0.1",
+    "hermes-engine": "0.1.1",
+    "jest": "24.8.0",
+    "jetifier": "1.6.4",
+    "metro-react-native-babel-preset": "0.54.1",
+    "node-pre-gyp": "0.13.0",
     "react-test-renderer": "16.8.3",
-    "replace-in-file": "^3.4.4"
+    "replace-in-file": "3.4.4"
   },
   "jest": {
     "preset": "react-native"
