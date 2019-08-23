@@ -1,6 +1,9 @@
 package net.iget.www;
 
-import androidx.multidex.MultiDexApplication;
+import android.content.Intent;
+// import androidx.multidex.MultiDexApplication;
+import com.reactnativenavigation.NavigationApplication;
+import com.reactnativenavigation.controllers.ActivityCallbacks;
 
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
@@ -30,52 +33,44 @@ import com.reactnativecommunity.geolocation.GeolocationPackage;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainApplication extends MultiDexApplication implements ReactApplication {
-
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
-    @Override
-    public boolean getUseDeveloperSupport() {
-      return BuildConfig.DEBUG;
-    }
-
-    @Override
-    protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-        new MainReactPackage(),
-        new GeolocationPackage(),
-        new RNFirebasePackage(),
-        // add/remove these packages as appropriate
-        new RNFirebaseAdMobPackage(),
-        new RNFirebaseAnalyticsPackage(),
-        new RNFirebaseAuthPackage(),
-        new RNFirebaseRemoteConfigPackage(),
-        new RNFirebaseCrashlyticsPackage(),
-        new RNFirebaseDatabasePackage(),
-        new RNFirebaseFirestorePackage(),
-        new RNFirebaseFunctionsPackage(),
-        new RNFirebaseInstanceIdPackage(),
-        new RNFirebaseLinksPackage(),
-        new RNFirebaseMessagingPackage(),
-        new RNFirebaseNotificationsPackage(),
-        new RNFirebasePerformancePackage(),
-        new RNFirebaseStoragePackage()
-      );
-    }
-
-    @Override
-    protected String getJSMainModuleName() {
-      return "index";
-    }
-  };
+public class MainApplication extends NavigationApplication implements ReactApplication {
+  @Override
+  public boolean isDebug() {
+    return BuildConfig.DEBUG;
+  }
 
   @Override
-  public ReactNativeHost getReactNativeHost() {
-    return mReactNativeHost;
+  public List<ReactPackage> createAdditionalReactPackages() {
+    return Arrays.<ReactPackage>asList(
+      new MainReactPackage(),
+      new GeolocationPackage(),
+      new RNFirebasePackage(),
+      // add/remove these packages as appropriate
+      new RNFirebaseAdMobPackage(),
+      new RNFirebaseAnalyticsPackage(),
+      new RNFirebaseAuthPackage(),
+      new RNFirebaseRemoteConfigPackage(),
+      new RNFirebaseCrashlyticsPackage(),
+      new RNFirebaseDatabasePackage(),
+      new RNFirebaseFirestorePackage(),
+      new RNFirebaseFunctionsPackage(),
+      new RNFirebaseInstanceIdPackage(),
+      new RNFirebaseLinksPackage(),
+      new RNFirebaseMessagingPackage(),
+      new RNFirebaseNotificationsPackage(),
+      new RNFirebasePerformancePackage(),
+      new RNFirebaseStoragePackage()
+    );
+  }
+
+  @Override
+  public String getJSMainModuleName() {
+    return "index";
   }
 
   @Override
   public void onCreate() {
     super.onCreate();
-    SoLoader.init(this, /* native exopackage */ false);
+    SoLoader.init(this, /* native exopackage */ false); 
   }
 }

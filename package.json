@@ -1,6 +1,6 @@
 {
   "name": "iget",
-  "version": "5.4.0",
+  "version": "4.0.0",
   "private": true,
   "scripts": {
     "android-bundle": "ORG_GRADLE_PROJECT_bundleInDev=true npm run android",
@@ -15,7 +15,8 @@
     "@react-native-community/geolocation": "2.0.2",
     "react": "16.8.6",
     "react-native": "0.60.5",
-    "react-native-firebase": "5.5.5"
+    "react-native-firebase": "5.5.5",
+    "react-native-navigation": "1"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
