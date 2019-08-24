@@ -18,6 +18,11 @@ target 'iget' do
   pod 'Fabric', '~> 1.10.2'
   pod 'Crashlytics', '~> 3.13.2'
 
+  pod 'Bolts'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+
   # pod 'react-native-add-calendar-event', :path => '../node_modules/react-native-add-calendar-event'
   # pod 'RNOpenAppSettings', :path => '../node_modules/react-native-app-settings'
   # pod 'RNFastImage', :path => '../node_modules/react-native-fast-image'
@@ -26,5 +31,6 @@ target 'iget' do
   # pod 'RNSnackbar', :path => '../node_modules/react-native-snackbar'
   # pod 'RCTYouTube', :path => '../node_modules/react-native-youtube'
 
+  # pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
 
 end

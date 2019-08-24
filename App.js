@@ -17,12 +17,15 @@ import * as AddCalendarEvent from "react-native-add-calendar-event";
 import OpenAppSettings from "react-native-app-settings";
 import GPSState from "react-native-gps-state";
 import FastImage from "react-native-fast-image";
+import { LoginManager, AccessToken } from "react-native-fbsdk";
 
 export default class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      gpsStatus: -1
+      gpsStatus: -1,
+      isAuthorising: false,
+      facebook: null
     };
   }
 
@@ -76,6 +79,37 @@ export default class App extends React.Component {
     />
   );
 
+  fbAuth = async () => {
+    try {
+      const { isCancelled } = await LoginManager.logInWithPermissions([
+        `public_profile`
+      ]);
+
+      this.setState({ isAuthorising: false });
+
+      if (isCancelled === false) {
+        const { accessToken } = await AccessToken.getCurrentAccessToken();
+        console.log(accessToken);
+
+        const response = await fetch(
+          `https://graph.facebook.com/me?fields=email,name&access_token=${accessToken}`
+        );
+
+        let responseJson = await response.json();
+
+        console.log(responseJson);
+
+        this.setState({ facebook: JSON.stringify(responseJson) });
+      } else {
+      }
+    } catch (e) {
+      this.setState({ isAuthorising: false });
+      if (AccessToken.getCurrentAccessToken() != null) {
+        LoginManager.logOut();
+      }
+    }
+  };
+
   render() {
     return (
       <ScrollView>
@@ -106,6 +140,9 @@ export default class App extends React.Component {
             source={require("./assets/ReactNativeFirebase.png")}
             style={[styles.logo]}
           />
+          <TouchableHighlight onPress={this.fbAuth}>
+            <Text>{`Facebook : ${this.state.facebook}`}</Text>
+          </TouchableHighlight>
           <TouchableHighlight onPress={this.calendarEvent}>
             <Text>calendar event</Text>
           </TouchableHighlight>

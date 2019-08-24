@@ -6,6 +6,7 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.controllers.ActivityCallbacks;
 
 import com.facebook.react.ReactApplication;
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.dylanvann.fastimage.FastImageViewPackage;
 import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
@@ -50,6 +51,7 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   public List<ReactPackage> createAdditionalReactPackages() {
     return Arrays.<ReactPackage>asList(
       new MainReactPackage(),
+      new FBSDKPackage(),
       new FastImageViewPackage(),
       new ReactNativeYouTube(),
       new SnackbarPackage(),
