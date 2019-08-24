@@ -19,6 +19,7 @@ import GPSState from "react-native-gps-state";
 import FastImage from "react-native-fast-image";
 import { LoginManager, AccessToken } from "react-native-fbsdk";
 import { GoogleSignin, statusCodes } from "react-native-google-signin";
+import RNKakaoLogins from "react-native-kakao-logins";
 
 export default class App extends React.Component {
   constructor() {
@@ -27,7 +28,8 @@ export default class App extends React.Component {
       gpsStatus: -1,
       isAuthorising: false,
       facebook: null,
-      google: null
+      google: null,
+      kakao: null
     };
   }
 
@@ -137,6 +139,30 @@ export default class App extends React.Component {
     }
   };
 
+  kakaoAuth = () => {
+    RNKakaoLogins.login((err, result) => {
+      if (err) {
+        openBasicPopup(
+          this.props.navigator,
+          "아이겟 로그인",
+          `카카오 로그인 실패\n${err.code}: ${err.message}`
+        );
+        return;
+      }
+
+      const token = result.token;
+
+      RNKakaoLogins.getProfile(async (err, user) => {
+        if (err) {
+          console.log(err);
+          return;
+        }
+
+        this.setState({ kakao: JSON.stringify(user) });
+      });
+    });
+  };
+
   render() {
     return (
       <ScrollView>
@@ -167,6 +193,9 @@ export default class App extends React.Component {
             source={require("./assets/ReactNativeFirebase.png")}
             style={[styles.logo]}
           />
+          <TouchableHighlight onPress={this.kakaoAuth}>
+            <Text>{`Kakao : ${this.state.kakao}`}</Text>
+          </TouchableHighlight>
           <TouchableHighlight onPress={this.googleAuth}>
             <Text>{`Google : ${this.state.google}`}</Text>
           </TouchableHighlight>

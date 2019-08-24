@@ -9,6 +9,7 @@
 
 #import "RCCManager.h"
 
+#import <KakaoOpenSDK/KakaoOpenSDK.h>
 #import <RNGoogleSignin/RNGoogleSignin.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <React/RCTBridge.h>
@@ -53,12 +54,17 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
   openURL:(nonnull NSURL *)url 
   options:(nonnull NSDictionary<NSString *,id> *)options 
 {
+  if ([KOSession isKakaoAccountLoginCallback:url]) {
+    return [KOSession handleOpenURL:url];
+  }
+
   return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]
          || [RNGoogleSignin application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   [FBSDKAppEvents activateApp];
+  [KOSession handleDidBecomeActive];
 }
 
 @end

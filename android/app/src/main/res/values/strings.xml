@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">아이겟</string>
     <string name="facebook_app_id">610146449112227</string>
+    <string name="kakao_app_key">aca414ca247fc56134c7fa7024352beb</string>
 </resources>

@@ -48,6 +48,8 @@
 		CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD319231195DD000C5B4B /* libFastImage.a */; };
 		CEDBD34C231199AF000C5B4B /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD34B231199A0000C5B4B /* libRCTFBSDK.a */; };
 		CEDBD4A62311ADE3000C5B4B /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD4A32311ADD7000C5B4B /* libRNGoogleSignin.a */; };
+		CEDBD5512311B394000C5B4B /* libRNKakaoLogins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD54E2311B377000C5B4B /* libRNKakaoLogins.a */; };
+		CEDBD5532311B42C000C5B4B /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD5522311B42C000C5B4B /* KakaoOpenSDK.framework */; };
 		CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC12D123113EC10054DA23 /* libAirMaps.a */; };
 		CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130023113F4A0054DA23 /* libRNSnackbar.a */; };
 		CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130723113FAF0054DA23 /* libRCTYouTube.a */; };
@@ -372,6 +374,13 @@
 			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
 			remoteInfo = RNGoogleSignin;
 		};
+		CEDBD54D2311B377000C5B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDBD51D2311B377000C5B4B /* RNKakaoLogins.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNKakaoLogins;
+		};
 		CEEC12D023113EC10054DA23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */;
@@ -436,6 +445,8 @@
 		CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FastImage.xcodeproj; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; };
 		CEDBD346231199A0000C5B4B /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
 		CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
+		CEDBD51D2311B377000C5B4B /* RNKakaoLogins.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNKakaoLogins.xcodeproj; path = "../node_modules/react-native-kakao-logins/ios/RNKakaoLogins.xcodeproj"; sourceTree = "<group>"; };
+		CEDBD5522311B42C000C5B4B /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = "../node_modules/react-native-kakao-logins/ios/Frameworks/KakaoOpenSDK.framework"; sourceTree = "<group>"; };
 		CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSnackbar.xcodeproj; path = "../node_modules/react-native-snackbar/ios/RNSnackbar.xcodeproj"; sourceTree = "<group>"; };
 		CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
@@ -459,6 +470,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDBD5512311B394000C5B4B /* libRNKakaoLogins.a in Frameworks */,
 				CEDBD4A62311ADE3000C5B4B /* libRNGoogleSignin.a in Frameworks */,
 				CEDBD34C231199AF000C5B4B /* libRCTFBSDK.a in Frameworks */,
 				CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */,
@@ -466,6 +478,7 @@
 				CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */,
 				CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */,
 				CE9AF7F62311353C00606434 /* libDPMGpsState.a in Frameworks */,
+				CEDBD5532311B42C000C5B4B /* KakaoOpenSDK.framework in Frameworks */,
 				CEB9C9512311343D0091B099 /* libRNAddCalendarEvent.a in Frameworks */,
 				CEB9C94A231133AF0091B099 /* libRNOpenAppSettings.a in Frameworks */,
 				CEB9C78923103E140091B099 /* libRNCGeolocation.a in Frameworks */,
@@ -651,6 +664,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEDBD5522311B42C000C5B4B /* KakaoOpenSDK.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
@@ -682,6 +696,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CEDBD51D2311B377000C5B4B /* RNKakaoLogins.xcodeproj */,
 				CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */,
 				CEDBD346231199A0000C5B4B /* RCTFBSDK.xcodeproj */,
 				CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */,
@@ -814,6 +829,14 @@
 			isa = PBXGroup;
 			children = (
 				CEDBD4A32311ADD7000C5B4B /* libRNGoogleSignin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDBD51E2311B377000C5B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDBD54E2311B377000C5B4B /* libRNKakaoLogins.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1043,6 +1066,10 @@
 				{
 					ProductGroup = CEDBD4742311ADD7000C5B4B /* Products */;
 					ProjectRef = CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */;
+				},
+				{
+					ProductGroup = CEDBD51E2311B377000C5B4B /* Products */;
+					ProjectRef = CEDBD51D2311B377000C5B4B /* RNKakaoLogins.xcodeproj */;
 				},
 				{
 					ProductGroup = CEB9C9202311339D0091B099 /* Products */;
@@ -1365,6 +1392,13 @@
 			remoteRef = CEDBD4A22311ADD7000C5B4B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CEDBD54E2311B377000C5B4B /* libRNKakaoLogins.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNKakaoLogins.a;
+			remoteRef = CEDBD54D2311B377000C5B4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		CEEC12D123113EC10054DA23 /* libAirMaps.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1633,6 +1667,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(SRCROOT)/../node_modules/react-native-kakao-logins/ios/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1648,6 +1683,7 @@
 					"$(SRCROOT)/../node_modules/react-native-youtube",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-kakao-logins/ios/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1675,6 +1711,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(SRCROOT)/../node_modules/react-native-kakao-logins/ios/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1690,6 +1727,7 @@
 					"$(SRCROOT)/../node_modules/react-native-youtube",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-kakao-logins/ios/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
