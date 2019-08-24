@@ -18,6 +18,7 @@ import OpenAppSettings from "react-native-app-settings";
 import GPSState from "react-native-gps-state";
 import FastImage from "react-native-fast-image";
 import { LoginManager, AccessToken } from "react-native-fbsdk";
+import { GoogleSignin, statusCodes } from "react-native-google-signin";
 
 export default class App extends React.Component {
   constructor() {
@@ -25,7 +26,8 @@ export default class App extends React.Component {
     this.state = {
       gpsStatus: -1,
       isAuthorising: false,
-      facebook: null
+      facebook: null,
+      google: null
     };
   }
 
@@ -110,6 +112,31 @@ export default class App extends React.Component {
     }
   };
 
+  googleAuth = async () => {
+    GoogleSignin.configure({
+      iosClientId:
+        "547698618171-3a57enc1e4fdiq4t73bb8buhq8923vjb.apps.googleusercontent.com", // only for iOS
+      webClientId:
+        "547698618171-l97pscv1bg1sb34je2ra9k639dsm8bsh.apps.googleusercontent.com"
+    });
+
+    try {
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      this.setState({ google: JSON.stringify(userInfo) });
+    } catch (error) {
+      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+        // user cancelled the login flow
+      } else if (error.code === statusCodes.IN_PROGRESS) {
+        // operation (f.e. sign in) is in progress already
+      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+        // play services not available or outdated
+      } else {
+        // some other error happened
+      }
+    }
+  };
+
   render() {
     return (
       <ScrollView>
@@ -140,6 +167,9 @@ export default class App extends React.Component {
             source={require("./assets/ReactNativeFirebase.png")}
             style={[styles.logo]}
           />
+          <TouchableHighlight onPress={this.googleAuth}>
+            <Text>{`Google : ${this.state.google}`}</Text>
+          </TouchableHighlight>
           <TouchableHighlight onPress={this.fbAuth}>
             <Text>{`Facebook : ${this.state.facebook}`}</Text>
           </TouchableHighlight>

@@ -9,6 +9,7 @@
 
 #import "RCCManager.h"
 
+#import <RNGoogleSignin/RNGoogleSignin.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
@@ -18,7 +19,8 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application 
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   [FIRApp configure];
 
@@ -48,28 +50,12 @@
 }
 
 - (BOOL)application:(UIApplication *)application 
-            openURL:(NSURL *)url 
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-
-  BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
-    openURL:url
-    sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
-    annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
-  ];
-
-  // Add any custom logic here.
-  
-  if ([[FBSDKApplicationDelegate sharedInstance] application:application openURL:url options:options]) {
-    return YES;
-  }
-
-  if ([RCTLinkingManager application:application openURL:url options:options]) {
-    return YES;
-  }
-
-  return handled;
+  openURL:(nonnull NSURL *)url 
+  options:(nonnull NSDictionary<NSString *,id> *)options 
+{
+  return [[FBSDKApplicationDelegate sharedInstance] application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]
+         || [RNGoogleSignin application:application openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
 }
-
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
   [FBSDKAppEvents activateApp];

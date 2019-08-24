@@ -47,6 +47,7 @@
 		CEB9C9512311343D0091B099 /* libRNAddCalendarEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */; };
 		CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD319231195DD000C5B4B /* libFastImage.a */; };
 		CEDBD34C231199AF000C5B4B /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD34B231199A0000C5B4B /* libRCTFBSDK.a */; };
+		CEDBD4A62311ADE3000C5B4B /* libRNGoogleSignin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD4A32311ADD7000C5B4B /* libRNGoogleSignin.a */; };
 		CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC12D123113EC10054DA23 /* libAirMaps.a */; };
 		CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130023113F4A0054DA23 /* libRNSnackbar.a */; };
 		CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130723113FAF0054DA23 /* libRCTYouTube.a */; };
@@ -364,6 +365,13 @@
 			remoteGlobalIDString = 9350E0F11CE3B0920041D815;
 			remoteInfo = RCTFBSDK;
 		};
+		CEDBD4A22311ADD7000C5B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9FD355121D3E4A2900D06170;
+			remoteInfo = RNGoogleSignin;
+		};
 		CEEC12D023113EC10054DA23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */;
@@ -427,6 +435,7 @@
 		CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAddCalendarEvent.xcodeproj; path = "../node_modules/react-native-add-calendar-event/ios/RNAddCalendarEvent.xcodeproj"; sourceTree = "<group>"; };
 		CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FastImage.xcodeproj; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; };
 		CEDBD346231199A0000C5B4B /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
+		CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNGoogleSignin.xcodeproj; path = "../node_modules/react-native-google-signin/ios/RNGoogleSignin.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSnackbar.xcodeproj; path = "../node_modules/react-native-snackbar/ios/RNSnackbar.xcodeproj"; sourceTree = "<group>"; };
 		CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
@@ -450,6 +459,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDBD4A62311ADE3000C5B4B /* libRNGoogleSignin.a in Frameworks */,
 				CEDBD34C231199AF000C5B4B /* libRCTFBSDK.a in Frameworks */,
 				CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */,
 				CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */,
@@ -672,6 +682,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */,
 				CEDBD346231199A0000C5B4B /* RCTFBSDK.xcodeproj */,
 				CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */,
 				CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */,
@@ -795,6 +806,14 @@
 			isa = PBXGroup;
 			children = (
 				CEDBD34B231199A0000C5B4B /* libRCTFBSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDBD4742311ADD7000C5B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDBD4A32311ADD7000C5B4B /* libRNGoogleSignin.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1020,6 +1039,10 @@
 				{
 					ProductGroup = 2759477A2261A42A00BA95C5 /* Products */;
 					ProjectRef = 8C34C759D8274A5CB8F8E751 /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = CEDBD4742311ADD7000C5B4B /* Products */;
+					ProjectRef = CEDBD4732311ADD7000C5B4B /* RNGoogleSignin.xcodeproj */;
 				},
 				{
 					ProductGroup = CEB9C9202311339D0091B099 /* Products */;
@@ -1335,6 +1358,13 @@
 			remoteRef = CEDBD34A231199A0000C5B4B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CEDBD4A32311ADD7000C5B4B /* libRNGoogleSignin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNGoogleSignin.a;
+			remoteRef = CEDBD4A22311ADD7000C5B4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		CEEC12D123113EC10054DA23 /* libAirMaps.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1455,12 +1485,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-iget/Pods-iget-resources.sh",
 				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1615,6 +1647,7 @@
 					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
 					"$(SRCROOT)/../node_modules/react-native-youtube",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1656,6 +1689,7 @@
 					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
 					"$(SRCROOT)/../node_modules/react-native-youtube",
 					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-google-signin/ios/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

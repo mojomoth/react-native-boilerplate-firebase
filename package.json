@@ -23,6 +23,7 @@
     "react-native-fast-image": "4",
     "react-native-fbsdk": "1.0.1",
     "react-native-firebase": "5.5.5",
+    "react-native-google-signin": "2.0.0",
     "react-native-gps-state": "2.0.3",
     "react-native-maps": "0.25.0",
     "react-native-navigation": "1",
