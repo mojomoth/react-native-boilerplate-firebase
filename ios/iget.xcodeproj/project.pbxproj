@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
@@ -56,6 +55,7 @@
 		CEDBD55F2311BB9A000C5B4B /* KakaoCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD55C2311BB9A000C5B4B /* KakaoCommon.framework */; };
 		CEDBD5602311BB9A000C5B4B /* KakaoLink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD55D2311BB9A000C5B4B /* KakaoLink.framework */; };
 		CEDBD5C92311BD71000C5B4B /* libRCTOneSignal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD5A72311BD60000C5B4B /* libRCTOneSignal.a */; };
+		CEDBD6A32311D2A6000C5B4B /* NanumSquareB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEDBD6702311D2A6000C5B4B /* NanumSquareB.ttf */; };
 		CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC12D123113EC10054DA23 /* libAirMaps.a */; };
 		CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130023113F4A0054DA23 /* libRNSnackbar.a */; };
 		CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130723113FAF0054DA23 /* libRCTYouTube.a */; };
@@ -482,6 +482,7 @@
 		CEDBD55D2311BB9A000C5B4B /* KakaoLink.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoLink.framework; sourceTree = "<group>"; };
 		CEDBD5932311BD5F000C5B4B /* RCTOneSignal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTOneSignal.xcodeproj; path = "../node_modules/react-native-onesignal/ios/RCTOneSignal.xcodeproj"; sourceTree = "<group>"; };
 		CEDBD5CA2311BE5D000C5B4B /* iget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = iget.entitlements; path = iget/iget.entitlements; sourceTree = "<group>"; };
+		CEDBD6702311D2A6000C5B4B /* NanumSquareB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NanumSquareB.ttf; path = ../assets/fonts/NanumSquareB.ttf; sourceTree = "<group>"; };
 		CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSnackbar.xcodeproj; path = "../node_modules/react-native-snackbar/ios/RNSnackbar.xcodeproj"; sourceTree = "<group>"; };
 		CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
@@ -649,6 +650,7 @@
 		13B07FAE1A68108700A75B9A /* iget */ = {
 			isa = PBXGroup;
 			children = (
+				CEDBD6702311D2A6000C5B4B /* NanumSquareB.ttf */,
 				CEDBD5CA2311BE5D000C5B4B /* iget.entitlements */,
 				CEEC1309231141140054DA23 /* YTPlayerView-iframe-player.html */,
 				27760E6A229B6FDF00F5F127 /* GoogleService-Info.plist */,
@@ -792,6 +794,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0F65422D7FF42AB1B1B439CC /* Pods */,
 				2759474C2261A42900BA95C5 /* Recovered References */,
+				5426103C58564B93809CE529 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -937,6 +940,14 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		5426103C58564B93809CE529 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1546,6 +1557,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDBD6A32311D2A6000C5B4B /* NanumSquareB.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				CEEC130A231141140054DA23 /* YTPlayerView-iframe-player.html in Resources */,

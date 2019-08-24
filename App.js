@@ -213,6 +213,8 @@ export default class App extends React.Component {
               }}
             />
           </View>
+          <Text style={{ fontFamily: "NanumSquareB" }}>{`가나다라마바사`}</Text>
+          <Text>{`가나다라마바사`}</Text>
           {this.YourImage()}
           <YouTube
             videoId="TShWV0NK7cI" // The YouTube video ID
