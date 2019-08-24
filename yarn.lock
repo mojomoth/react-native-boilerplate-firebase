@@ -2938,7 +2938,7 @@ inquirer@^3.0.6:
     strip-ansi "^4.0.0"
     through "^2.3.6"
 
-invariant@^2.2.4:
+invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
@@ -5147,6 +5147,13 @@ react-native-navigation@1:
   integrity sha512-CbzeU4ET+/lSMCqrgHXbetv8xhvrUJ15qFr8LkfXfmXpcaCAhOyfJlqpKmVkhHUrPwlWVXAC+ndD0miPTEKF5Q==
   dependencies:
     lodash "4.x.x"
+
+react-native-onesignal@3.3.2:
+  version "3.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-onesignal/-/react-native-onesignal-3.3.2.tgz#3c9cb7f8ac919de3f414089613a114406180a309"
+  integrity sha512-SZBGVVWZ5xAe2ALeE2L5HBIh6hfFKjFqARrV8U80zyLFUN8QatRy1eaXKAHgb7wvnCGR8FoNKI8qF+Z4kIKgjg==
+  dependencies:
+    invariant "^2.2.2"
 
 react-native-phone-call@1.0.9:
   version "1.0.9"

@@ -21,6 +21,7 @@ import { LoginManager, AccessToken } from "react-native-fbsdk";
 import { GoogleSignin, statusCodes } from "react-native-google-signin";
 import RNKakaoLogins from "react-native-kakao-logins";
 import RNKakaoTools from "react-native-kakao-tools";
+import OneSignal from "react-native-onesignal";
 
 export default class App extends React.Component {
   constructor() {
@@ -32,6 +33,12 @@ export default class App extends React.Component {
       google: null,
       kakao: null
     };
+
+    // mojomoth
+    OneSignal.init("e6c5964e-6c1d-4702-8c02-bdb69ebbfcbd", {
+      kOSSettingsKeyAutoPrompt: false
+    });
+    OneSignal.addEventListener("ids", this.onIds);
   }
 
   async componentDidMount() {
@@ -177,6 +184,11 @@ export default class App extends React.Component {
     );
   };
 
+  onIds = async device => {
+    if (device.userId === null || device.userId === undefined) return;
+    this.setState({ onsignalId: device.userId });
+  };
+
   render() {
     return (
       <ScrollView>
@@ -207,6 +219,7 @@ export default class App extends React.Component {
             source={require("./assets/ReactNativeFirebase.png")}
             style={[styles.logo]}
           />
+          <Text>{`onesignal id : ${this.state.onsignalId}`}</Text>
           <TouchableHighlight
             onPress={() =>
               this.shareKakao("http://www.goog.com", "xxxxx", "", "confirm")

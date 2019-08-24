@@ -29,6 +29,7 @@
     "react-native-kakao-tools": "1.0.1",
     "react-native-maps": "0.25.0",
     "react-native-navigation": "1",
+    "react-native-onesignal": "3.3.2",
     "react-native-phone-call": "1.0.9",
     "react-native-render-html": "4.1.2",
     "react-native-snackbar": "2.0.2",
