@@ -36,12 +36,19 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* igetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* igetTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		66F583A38C047519D1E18159 /* libPods-iget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599A1087F9C545123EFD61BE /* libPods-iget.a */; };
+		41ADDCEE915EE6CD5D7121D5 /* libPods-iget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC05208A5D4926D73DE33092 /* libPods-iget.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8AEB10120B9847F8905B7DA1 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C97DD56AE46E45398AF70E2E /* libRNFirebase.a */; };
 		A7D768AAAB524BBE880B825B /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E382C870BD424BF3A5CB448A /* libReactNativeNavigation.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		CE9AF7F62311353C00606434 /* libDPMGpsState.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9AF7CE2311353000606434 /* libDPMGpsState.a */; };
 		CEB9C78923103E140091B099 /* libRNCGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C78723103E050091B099 /* libRNCGeolocation.a */; };
+		CEB9C94A231133AF0091B099 /* libRNOpenAppSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C9492311339D0091B099 /* libRNOpenAppSettings.a */; };
+		CEB9C9512311343D0091B099 /* libRNAddCalendarEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */; };
+		CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC12D123113EC10054DA23 /* libAirMaps.a */; };
+		CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130023113F4A0054DA23 /* libRNSnackbar.a */; };
+		CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130723113FAF0054DA23 /* libRCTYouTube.a */; };
+		CEEC130A231141140054DA23 /* YTPlayerView-iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = CEEC1309231141140054DA23 /* YTPlayerView-iframe-player.html */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -306,6 +313,13 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		CE9AF7CD2311353000606434 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9AF7C92311353000606434 /* DPMGpsState.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3F1864C81F3D038C0071102C;
+			remoteInfo = DPMGpsState;
+		};
 		CEB9C78623103E050091B099 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEB9C76023103E050091B099 /* RNCGeolocation.xcodeproj */;
@@ -319,6 +333,41 @@
 			proxyType = 2;
 			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
 			remoteInfo = ReactNativeNavigation;
+		};
+		CEB9C9482311339D0091B099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB9C91F2311339D0091B099 /* RNOpenAppSettings.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNOpenAppSettings;
+		};
+		CEB9C94F231134310091B099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNAddCalendarEvent;
+		};
+		CEEC12D023113EC10054DA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 11FA5C511C4A1296003AC2EE;
+			remoteInfo = AirMaps;
+		};
+		CEEC12FF23113F4A0054DA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4114DC4C1C187C3A003CD988;
+			remoteInfo = RNSnackbar;
+		};
+		CEEC130623113FAF0054DA23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BDB9BC91B4289AE00EF9FEF;
+			remoteInfo = RCTYouTube;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -348,15 +397,22 @@
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		32706E4EE4404A28A3128E57 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		4A114661868ACFA83CCA60B3 /* libPods-iget-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iget-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		599A1087F9C545123EFD61BE /* libPods-iget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8C34C759D8274A5CB8F8E751 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B2121FE3F0701D7C33F213D3 /* Pods-iget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.release.xcconfig"; path = "Pods/Target Support Files/Pods-iget/Pods-iget.release.xcconfig"; sourceTree = "<group>"; };
+		BC05208A5D4926D73DE33092 /* libPods-iget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97DD56AE46E45398AF70E2E /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
+		CE9AF7C92311353000606434 /* DPMGpsState.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DPMGpsState.xcodeproj; path = "../node_modules/react-native-gps-state/ios/DPMGpsState.xcodeproj"; sourceTree = "<group>"; };
 		CEB9C76023103E050091B099 /* RNCGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCGeolocation.xcodeproj; path = "../node_modules/@react-native-community/geolocation/ios/RNCGeolocation.xcodeproj"; sourceTree = "<group>"; };
+		CEB9C91F2311339D0091B099 /* RNOpenAppSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNOpenAppSettings.xcodeproj; path = "../node_modules/react-native-app-settings/ios/RNOpenAppSettings.xcodeproj"; sourceTree = "<group>"; };
+		CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAddCalendarEvent.xcodeproj; path = "../node_modules/react-native-add-calendar-event/ios/RNAddCalendarEvent.xcodeproj"; sourceTree = "<group>"; };
+		CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
+		CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSnackbar.xcodeproj; path = "../node_modules/react-native-snackbar/ios/RNSnackbar.xcodeproj"; sourceTree = "<group>"; };
+		CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
+		CEEC1309231141140054DA23 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "../node_modules/react-native-youtube/assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		D8E13BB553BB18534EEFFDDE /* Pods-iget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iget/Pods-iget.debug.xcconfig"; sourceTree = "<group>"; };
 		E382C870BD424BF3A5CB448A /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNavigation.a; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -376,6 +432,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */,
+				CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */,
+				CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */,
+				CE9AF7F62311353C00606434 /* libDPMGpsState.a in Frameworks */,
+				CEB9C9512311343D0091B099 /* libRNAddCalendarEvent.a in Frameworks */,
+				CEB9C94A231133AF0091B099 /* libRNOpenAppSettings.a in Frameworks */,
 				CEB9C78923103E140091B099 /* libRNCGeolocation.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
@@ -389,9 +451,9 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				66F583A38C047519D1E18159 /* libPods-iget.a in Frameworks */,
 				8AEB10120B9847F8905B7DA1 /* libRNFirebase.a in Frameworks */,
 				A7D768AAAB524BBE880B825B /* libReactNativeNavigation.a in Frameworks */,
+				41ADDCEE915EE6CD5D7121D5 /* libPods-iget.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +565,7 @@
 		13B07FAE1A68108700A75B9A /* iget */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC1309231141140054DA23 /* YTPlayerView-iframe-player.html */,
 				27760E6A229B6FDF00F5F127 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -561,9 +624,9 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
-				599A1087F9C545123EFD61BE /* libPods-iget.a */,
 				4A114661868ACFA83CCA60B3 /* libPods-iget-tvOS.a */,
 				11B23455DE3C4D5673E7318E /* libPods-iget-tvOSTests.a */,
+				BC05208A5D4926D73DE33092 /* libPods-iget.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -589,6 +652,12 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */,
+				CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */,
+				CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */,
+				CE9AF7C92311353000606434 /* DPMGpsState.xcodeproj */,
+				CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */,
+				CEB9C91F2311339D0091B099 /* RNOpenAppSettings.xcodeproj */,
 				CEB9C76023103E050091B099 /* RNCGeolocation.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -652,6 +721,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CE9AF7CA2311353000606434 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9AF7CE2311353000606434 /* libDPMGpsState.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CEB9C76123103E050091B099 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +741,46 @@
 			isa = PBXGroup;
 			children = (
 				CEB9C7E1231063640091B099 /* libReactNativeNavigation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB9C9202311339D0091B099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB9C9492311339D0091B099 /* libRNOpenAppSettings.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEB9C94C231134310091B099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEC12CD23113EC10054DA23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC12D123113EC10054DA23 /* libAirMaps.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEC12FC23113F4A0054DA23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC130023113F4A0054DA23 /* libRNSnackbar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEEC130323113FAF0054DA23 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC130723113FAF0054DA23 /* libRCTYouTube.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -786,6 +903,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = CEEC12CD23113EC10054DA23 /* Products */;
+					ProjectRef = CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */;
+				},
+				{
+					ProductGroup = CE9AF7CA2311353000606434 /* Products */;
+					ProjectRef = CE9AF7C92311353000606434 /* DPMGpsState.xcodeproj */;
+				},
+				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
 					ProjectRef = 00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */;
 				},
@@ -826,6 +951,10 @@
 					ProjectRef = 139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */;
 				},
 				{
+					ProductGroup = CEEC130323113FAF0054DA23 /* Products */;
+					ProjectRef = CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */;
+				},
+				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
@@ -834,12 +963,24 @@
 					ProjectRef = 32706E4EE4404A28A3128E57 /* ReactNativeNavigation.xcodeproj */;
 				},
 				{
+					ProductGroup = CEB9C94C231134310091B099 /* Products */;
+					ProjectRef = CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */;
+				},
+				{
 					ProductGroup = CEB9C76123103E050091B099 /* Products */;
 					ProjectRef = CEB9C76023103E050091B099 /* RNCGeolocation.xcodeproj */;
 				},
 				{
 					ProductGroup = 2759477A2261A42A00BA95C5 /* Products */;
 					ProjectRef = 8C34C759D8274A5CB8F8E751 /* RNFirebase.xcodeproj */;
+				},
+				{
+					ProductGroup = CEB9C9202311339D0091B099 /* Products */;
+					ProjectRef = CEB9C91F2311339D0091B099 /* RNOpenAppSettings.xcodeproj */;
+				},
+				{
+					ProductGroup = CEEC12FC23113F4A0054DA23 /* Products */;
+					ProjectRef = CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1098,6 +1239,13 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CE9AF7CE2311353000606434 /* libDPMGpsState.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libDPMGpsState.a;
+			remoteRef = CE9AF7CD2311353000606434 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		CEB9C78723103E050091B099 /* libRNCGeolocation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1110,6 +1258,41 @@
 			fileType = archive.ar;
 			path = libReactNativeNavigation.a;
 			remoteRef = CEB9C7E0231063640091B099 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEB9C9492311339D0091B099 /* libRNOpenAppSettings.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNOpenAppSettings.a;
+			remoteRef = CEB9C9482311339D0091B099 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAddCalendarEvent.a;
+			remoteRef = CEB9C94F231134310091B099 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEEC12D123113EC10054DA23 /* libAirMaps.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAirMaps.a;
+			remoteRef = CEEC12D023113EC10054DA23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEEC130023113F4A0054DA23 /* libRNSnackbar.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNSnackbar.a;
+			remoteRef = CEEC12FF23113F4A0054DA23 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEEC130723113FAF0054DA23 /* libRCTYouTube.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTYouTube.a;
+			remoteRef = CEEC130623113FAF0054DA23 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1128,6 +1311,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				CEEC130A231141140054DA23 /* YTPlayerView-iframe-player.html in Resources */,
 				27760E91229B6FDF00F5F127 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1334,8 +1518,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-navigation/ios",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-add-calendar-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
+					"$(SRCROOT)/../node_modules/react-native-gps-state/ios",
+					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-snackbar/ios",
+					"$(SRCROOT)/../node_modules/react-native-youtube/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1363,8 +1553,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
-					"$(SRCROOT)/../node_modules/react-native-navigation/ios",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-add-calendar-event/ios",
+					"$(SRCROOT)/../node_modules/react-native-app-settings/ios",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
+					"$(SRCROOT)/../node_modules/react-native-gps-state/ios",
+					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-snackbar/ios",
+					"$(SRCROOT)/../node_modules/react-native-youtube/**",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

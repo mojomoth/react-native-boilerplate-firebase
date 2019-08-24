@@ -20,10 +20,11 @@
 {
   [FIRApp configure];
 
+  // RNN
   NSURL *jsCodeLocation;
-
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 
+  // RNN
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   self.window.backgroundColor = [UIColor whiteColor];
   [[RCCManager sharedInstance] initBridgeWithBundleURL:jsCodeLocation];

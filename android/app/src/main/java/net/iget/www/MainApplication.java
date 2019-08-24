@@ -6,6 +6,12 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.controllers.ActivityCallbacks;
 
 import com.facebook.react.ReactApplication;
+import com.inprogress.reactnativeyoutube.ReactNativeYouTube;
+import com.azendoo.reactnativesnackbar.SnackbarPackage;
+import com.airbnb.android.react.maps.MapsPackage;
+import br.com.dopaminamob.gpsstate.GPSStatePackage;
+import com.krazylabs.OpenAppSettingsPackage;
+import com.vonovak.AddCalendarEventPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -43,6 +49,12 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   public List<ReactPackage> createAdditionalReactPackages() {
     return Arrays.<ReactPackage>asList(
       new MainReactPackage(),
+      new ReactNativeYouTube(),
+      new SnackbarPackage(),
+      new MapsPackage(),
+      new GPSStatePackage(),
+      new OpenAppSettingsPackage(),
+      new AddCalendarEventPackage(),
       new GeolocationPackage(),
       new RNFirebasePackage(),
       // add/remove these packages as appropriate

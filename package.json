@@ -12,11 +12,27 @@
     "test": "jest"
   },
   "dependencies": {
+    "@monterosa/react-native-parallax-scroll": "1.8.0",
     "@react-native-community/geolocation": "2.0.2",
+    "axios": "0.19.0",
     "react": "16.8.6",
     "react-native": "0.60.5",
+    "react-native-actionsheet": "2.4.2",
+    "react-native-add-calendar-event": "2.3.1",
+    "react-native-app-settings": "2.0.1",
     "react-native-firebase": "5.5.5",
-    "react-native-navigation": "1"
+    "react-native-gps-state": "2.0.3",
+    "react-native-maps": "0.25.0",
+    "react-native-navigation": "1",
+    "react-native-phone-call": "1.0.9",
+    "react-native-render-html": "4.1.2",
+    "react-native-snackbar": "2.0.2",
+    "react-native-swiper": "1.5.14",
+    "react-native-youtube": "2.0.0-beta",
+    "react-redux": "7.1.0",
+    "redux": "4.0.4",
+    "redux-persist": "5.10.0",
+    "redux-saga": "1.0.5"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
