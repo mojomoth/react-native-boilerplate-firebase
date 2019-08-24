@@ -20,6 +20,7 @@ import FastImage from "react-native-fast-image";
 import { LoginManager, AccessToken } from "react-native-fbsdk";
 import { GoogleSignin, statusCodes } from "react-native-google-signin";
 import RNKakaoLogins from "react-native-kakao-logins";
+import RNKakaoTools from "react-native-kakao-tools";
 
 export default class App extends React.Component {
   constructor() {
@@ -163,6 +164,19 @@ export default class App extends React.Component {
     });
   };
 
+  shareKakao = (url, text, image, buttonText) => {
+    RNKakaoTools.link(
+      `${text}`,
+      `${buttonText}`,
+      `${image}`,
+      `${url}`,
+      `${url}`,
+      ``,
+      ``,
+      result => console.log(result)
+    );
+  };
+
   render() {
     return (
       <ScrollView>
@@ -193,6 +207,13 @@ export default class App extends React.Component {
             source={require("./assets/ReactNativeFirebase.png")}
             style={[styles.logo]}
           />
+          <TouchableHighlight
+            onPress={() =>
+              this.shareKakao("http://www.goog.com", "xxxxx", "", "confirm")
+            }
+          >
+            <Text>{`Kakao Share`}</Text>
+          </TouchableHighlight>
           <TouchableHighlight onPress={this.kakaoAuth}>
             <Text>{`Kakao : ${this.state.kakao}`}</Text>
           </TouchableHighlight>

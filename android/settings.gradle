@@ -1,4 +1,6 @@
 rootProject.name = 'iget'
+include ':react-native-kakao-tools'
+project(':react-native-kakao-tools').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-kakao-tools/android')
 include ':react-native-kakao-logins'
 project(':react-native-kakao-logins').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-kakao-logins/android')
 include ':react-native-google-signin'

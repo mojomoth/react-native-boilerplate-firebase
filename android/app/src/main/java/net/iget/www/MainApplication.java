@@ -6,6 +6,7 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.controllers.ActivityCallbacks;
 
 import com.facebook.react.ReactApplication;
+import com.mojomoth.rnkakaotools.RNKakaoToolsPackage;
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
@@ -53,6 +54,7 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   public List<ReactPackage> createAdditionalReactPackages() {
     return Arrays.<ReactPackage>asList(
       new MainReactPackage(),
+      new RNKakaoToolsPackage(),
       new RNKakaoLoginsPackage(),
       new RNGoogleSigninPackage(),
       new FBSDKPackage(),

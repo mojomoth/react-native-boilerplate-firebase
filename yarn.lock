@@ -5131,6 +5131,11 @@ react-native-kakao-logins@1.3.7:
   dependencies:
     dooboolab-welcome "^1.1.0"
 
+react-native-kakao-tools@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-kakao-tools/-/react-native-kakao-tools-1.0.1.tgz#46973620142b6b38003421f728cbd4ab6277e290"
+  integrity sha512-HlRH0kXMwezvOK1qFUR23pQfxy1Yr2w6kEafI3n0Zepk1Ws46BCmk4di+VbUKteaaFZfjJ4dj6VncBEJivoE7Q==
+
 react-native-maps@0.25.0:
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.25.0.tgz#81bc51eb50e33811a9e1c345cc48869413ead67d"

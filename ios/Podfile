@@ -38,4 +38,6 @@ target 'iget' do
 
   pod 'RNKakaoLogins', :path => '../node_modules/react-native-kakao-logins'
 
+  pod 'RNKakaoTools', :path => '../node_modules/react-native-kakao-tools'
+
 end
