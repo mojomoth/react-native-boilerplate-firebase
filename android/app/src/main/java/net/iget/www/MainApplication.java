@@ -6,6 +6,7 @@ import com.reactnativenavigation.NavigationApplication;
 import com.reactnativenavigation.controllers.ActivityCallbacks;
 
 import com.facebook.react.ReactApplication;
+import com.kochava.reactlibrary.RNKochavaTrackerPackage;
 import com.geektime.rnonesignalandroid.ReactNativeOneSignalPackage;
 import com.mojomoth.rnkakaotools.RNKakaoToolsPackage;
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
@@ -55,7 +56,8 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   public List<ReactPackage> createAdditionalReactPackages() {
     return Arrays.<ReactPackage>asList(
       new MainReactPackage(),
-            new ReactNativeOneSignalPackage(),
+      new RNKochavaTrackerPackage(),
+      new ReactNativeOneSignalPackage(),
       new RNKakaoToolsPackage(),
       new RNKakaoLoginsPackage(),
       new RNGoogleSigninPackage(),

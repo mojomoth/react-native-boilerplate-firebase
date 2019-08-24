@@ -22,6 +22,7 @@ import { GoogleSignin, statusCodes } from "react-native-google-signin";
 import RNKakaoLogins from "react-native-kakao-logins";
 import RNKakaoTools from "react-native-kakao-tools";
 import OneSignal from "react-native-onesignal";
+import KochavaTracker from "react-native-kochava-tracker";
 
 export default class App extends React.Component {
   constructor() {
@@ -39,6 +40,14 @@ export default class App extends React.Component {
       kOSSettingsKeyAutoPrompt: false
     });
     OneSignal.addEventListener("ids", this.onIds);
+
+    // ConfKochavaTrackerigure.
+    let configMapObject = {};
+    configMapObject[KochavaTracker.PARAM_ANDROID_APP_GUID_STRING_KEY] =
+      "koiget-aacrp4h";
+    configMapObject[KochavaTracker.PARAM_IOS_APP_GUID_STRING_KEY] =
+      "koiget-ios-35m2o9";
+    KochavaTracker.configure(configMapObject);
   }
 
   async componentDidMount() {
