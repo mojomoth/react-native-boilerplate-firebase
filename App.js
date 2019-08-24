@@ -16,6 +16,7 @@ import YouTube from "react-native-youtube";
 import * as AddCalendarEvent from "react-native-add-calendar-event";
 import OpenAppSettings from "react-native-app-settings";
 import GPSState from "react-native-gps-state";
+import FastImage from "react-native-fast-image";
 
 export default class App extends React.Component {
   constructor() {
@@ -63,6 +64,18 @@ export default class App extends React.Component {
       });
   };
 
+  YourImage = () => (
+    <FastImage
+      style={{ width: 200, height: 200 }}
+      source={{
+        uri: "https://unsplash.it/400/400?image=1",
+        headers: { Authorization: "someAuthToken" },
+        priority: FastImage.priority.normal
+      }}
+      resizeMode={FastImage.resizeMode.contain}
+    />
+  );
+
   render() {
     return (
       <ScrollView>
@@ -78,6 +91,7 @@ export default class App extends React.Component {
               }}
             />
           </View>
+          {this.YourImage()}
           <YouTube
             videoId="TShWV0NK7cI" // The YouTube video ID
             apiKey="AIzaSyA5Zld_A_vOocb_-kw_mj3G48wNyAEQUn4"

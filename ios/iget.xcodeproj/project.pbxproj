@@ -45,6 +45,7 @@
 		CEB9C78923103E140091B099 /* libRNCGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C78723103E050091B099 /* libRNCGeolocation.a */; };
 		CEB9C94A231133AF0091B099 /* libRNOpenAppSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C9492311339D0091B099 /* libRNOpenAppSettings.a */; };
 		CEB9C9512311343D0091B099 /* libRNAddCalendarEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */; };
+		CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEDBD319231195DD000C5B4B /* libFastImage.a */; };
 		CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC12D123113EC10054DA23 /* libAirMaps.a */; };
 		CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130023113F4A0054DA23 /* libRNSnackbar.a */; };
 		CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEC130723113FAF0054DA23 /* libRCTYouTube.a */; };
@@ -348,6 +349,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNAddCalendarEvent;
 		};
+		CEDBD318231195DD000C5B4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A287971D1DE0C0A60081BDFA;
+			remoteInfo = FastImage;
+		};
 		CEEC12D023113EC10054DA23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */;
@@ -409,6 +417,7 @@
 		CEB9C76023103E050091B099 /* RNCGeolocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCGeolocation.xcodeproj; path = "../node_modules/@react-native-community/geolocation/ios/RNCGeolocation.xcodeproj"; sourceTree = "<group>"; };
 		CEB9C91F2311339D0091B099 /* RNOpenAppSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNOpenAppSettings.xcodeproj; path = "../node_modules/react-native-app-settings/ios/RNOpenAppSettings.xcodeproj"; sourceTree = "<group>"; };
 		CEB9C94B231134310091B099 /* RNAddCalendarEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAddCalendarEvent.xcodeproj; path = "../node_modules/react-native-add-calendar-event/ios/RNAddCalendarEvent.xcodeproj"; sourceTree = "<group>"; };
+		CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FastImage.xcodeproj; path = "../node_modules/react-native-fast-image/ios/FastImage.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AirMaps.xcodeproj; path = "../node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj"; sourceTree = "<group>"; };
 		CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSnackbar.xcodeproj; path = "../node_modules/react-native-snackbar/ios/RNSnackbar.xcodeproj"; sourceTree = "<group>"; };
 		CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTYouTube.xcodeproj; path = "../node_modules/react-native-youtube/RCTYouTube.xcodeproj"; sourceTree = "<group>"; };
@@ -432,6 +441,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDBD31A231195DD000C5B4B /* libFastImage.a in Frameworks */,
 				CEEC130823113FC80054DA23 /* libRCTYouTube.a in Frameworks */,
 				CEEC130123113F550054DA23 /* libRNSnackbar.a in Frameworks */,
 				CEEC12FA23113ECB0054DA23 /* libAirMaps.a in Frameworks */,
@@ -652,6 +662,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */,
 				CEEC130223113FAF0054DA23 /* RCTYouTube.xcodeproj */,
 				CEEC12FB23113F4A0054DA23 /* RNSnackbar.xcodeproj */,
 				CEEC12CC23113EC10054DA23 /* AirMaps.xcodeproj */,
@@ -757,6 +768,14 @@
 			isa = PBXGroup;
 			children = (
 				CEB9C950231134310091B099 /* libRNAddCalendarEvent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDBD314231195D4000C5B4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDBD319231195DD000C5B4B /* libFastImage.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -909,6 +928,10 @@
 				{
 					ProductGroup = CE9AF7CA2311353000606434 /* Products */;
 					ProjectRef = CE9AF7C92311353000606434 /* DPMGpsState.xcodeproj */;
+				},
+				{
+					ProductGroup = CEDBD314231195D4000C5B4B /* Products */;
+					ProjectRef = CEDBD313231195D4000C5B4B /* FastImage.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -1274,6 +1297,13 @@
 			remoteRef = CEB9C94F231134310091B099 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		CEDBD319231195DD000C5B4B /* libFastImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFastImage.a;
+			remoteRef = CEDBD318231195DD000C5B4B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		CEEC12D123113EC10054DA23 /* libAirMaps.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1525,7 +1555,8 @@
 					"$(SRCROOT)/../node_modules/react-native-gps-state/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-snackbar/ios",
-					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
+					"$(SRCROOT)/../node_modules/react-native-youtube",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1560,7 +1591,8 @@
 					"$(SRCROOT)/../node_modules/react-native-gps-state/ios",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-snackbar/ios",
-					"$(SRCROOT)/../node_modules/react-native-youtube/**",
+					"$(SRCROOT)/../node_modules/react-native-fast-image/ios",
+					"$(SRCROOT)/../node_modules/react-native-youtube",
 				);
 				INFOPLIST_FILE = iget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

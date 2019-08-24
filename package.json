@@ -20,6 +20,7 @@
     "react-native-actionsheet": "2.4.2",
     "react-native-add-calendar-event": "2.3.1",
     "react-native-app-settings": "2.0.1",
+    "react-native-fast-image": "4",
     "react-native-firebase": "5.5.5",
     "react-native-gps-state": "2.0.3",
     "react-native-maps": "0.25.0",
