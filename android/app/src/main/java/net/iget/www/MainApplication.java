@@ -3,7 +3,8 @@ package net.iget.www;
 import android.content.Intent;
 // import androidx.multidex.MultiDexApplication;
 import com.reactnativenavigation.NavigationApplication;
-import com.reactnativenavigation.controllers.ActivityCallbacks;
+import com.reactnativenavigation.react.NavigationReactNativeHost;
+import com.reactnativenavigation.react.ReactGateway;
 
 import com.facebook.react.ReactApplication;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
@@ -50,12 +51,22 @@ import java.util.List;
 
 public class MainApplication extends NavigationApplication implements ReactApplication {
   @Override
+  protected ReactGateway createReactGateway() {
+    ReactNativeHost host = new NavigationReactNativeHost(this, isDebug(), createAdditionalReactPackages()) {
+      @Override
+      protected String getJSMainModuleName() {
+        return "index";
+      }
+    };
+    return new ReactGateway(this, isDebug(), host);
+  }
+
+  @Override
   public boolean isDebug() {
     return BuildConfig.DEBUG;
   }
 
-  @Override
-  public List<ReactPackage> createAdditionalReactPackages() {
+  protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
       new MainReactPackage(),
       new RNCWebViewPackage(),
@@ -94,8 +105,8 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   }
 
   @Override
-  public String getJSMainModuleName() {
-    return "index";
+  public List<ReactPackage> createAdditionalReactPackages() {
+    return getPackages();
   }
 
   @Override

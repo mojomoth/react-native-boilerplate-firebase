@@ -1,12 +1,12 @@
 {
   "name": "iget",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "private": true,
   "scripts": {
     "android-bundle": "ORG_GRADLE_PROJECT_bundleInDev=true npm run android",
     "android": "react-native run-android",
     "ios": "react-native run-ios --simulator=\"iPhone X\"",
-    "apk": "cd android && ./gradlew assembleRelease",
+    "apk": "cd android && ./gradlew app:assembleRelease",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
     "test": "jest"
@@ -30,7 +30,7 @@
     "react-native-kakao-tools": "1.0.1",
     "react-native-kochava-tracker": "1.1.0",
     "react-native-maps": "0.25.0",
-    "react-native-navigation": "1",
+    "react-native-navigation": "3.1.1",
     "react-native-onesignal": "3.3.2",
     "react-native-phone-call": "1.0.9",
     "react-native-render-html": "4.1.2",
