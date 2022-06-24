@@ -23,7 +23,7 @@
     "@babel/runtime": "7.4.5",
     "babel-jest": "24.8.0",
     "fs-extra": "7.0.1",
-    "hermes-engine": "0.1.1",
+    "hermes-engine": "0.11.0",
     "jest": "24.8.0",
     "jetifier": "1.6.4",
     "metro-react-native-babel-preset": "0.54.1",
